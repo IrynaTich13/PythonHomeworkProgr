@@ -8,14 +8,14 @@
 import random
 
 n = int(input('Задайте количество элементов массива: '))
-list = []
+list_1 = []
 for i in range(n):
-    list.append(random.randint(-10, 10))
-print(list)
+    list_1.append(random.randint(-10, 10))
+print(list_1)
 
 min_num = int(input('Задайте минимальный элемент диапазона: '))
 max_num = int(input('Задайте максимальный элемент диапазона: '))
 
-for i in range(len(list)):
-    if min_num <= list[i] <= max_num:
+for i in range(len(list_1)):
+    if min_num <= list_1[i] <= max_num:
         print(i, end=' ')

@@ -15,9 +15,9 @@ n = int(input('Введите количество членов прогресс
 def rec(n):
     if n ==0:
         return 0
-    return (a + d*(n-1))
+    return a + d*(n-1)
 
-list = []              
+my_list = []              
 for i in range(1,n+1):
-    list.append(rec(i))
-print(*list)
+    my_list.append(rec(i))
+print(*my_list)
